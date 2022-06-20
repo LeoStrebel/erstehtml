@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Portfolio von Leo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="top">
+            <div id="navigation">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            
+        </div>
+
+  <div id="registr">
+
+    <h1 class="title">Erster Eintrag</h1>
+    <p>02. August 2014</p>
+
+    <hr>
+
+    <p>Dies ist mein erster Eintrag im Blog.</p>
+
+    <img class="bild" src="img/sta-je-html.jpg" alt="">
+    <img class="bild" src="img/CSS3_logo_and_wordmark.svg.png" alt="">
+    <img class="bild" src="img/Javascript_badge.png" alt="">
+
+</html>
+  </div>
+
+<script>
+    var video = document.querySelector("#videoElement");
+
+    if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+        video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+        console.log("Something went wrong!");
+        });
+    }
+</script>
+  </body>
+</html>

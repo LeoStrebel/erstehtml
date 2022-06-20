@@ -1,11 +1,7 @@
-body{
+/*body{
     color: #607d8b;
 }
 
-h2 {
-  background-color: #607d8b;
-  color: #ffffff;
-}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -14,10 +10,6 @@ body{
 
 h1{
     color: blue; 
-}
-
-h2{
-    background-color: red;
 }
 
 
@@ -31,4 +23,54 @@ td{
     border: solid;
     border-spacing: 10px;
     border-color: red;
+}*/
+
+#top {
+    text-align: center;
+    font-size: 200%;
+}
+
+#registr {
+	width: 100%;
+    margin: auto;
+    width: 30%;
+    border: 3px solid;
+    padding: 10px;
+    margin-top: 5%;
+    
+    border-radius: 30px;
+    border-color: black;
+}
+
+
+.forms {
+	width: 100%;
+    margin: auto;
+    width: 30%;
+    border: 3px solid;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.submitter{
+	width: 100%; 
+	padding: 12px 20px;
+	margin: 8px 0; 
+	display: inline-block; 
+	border: 1px solid #ccc; 
+	box-sizing: border-box;
+	border-radius: 30px;
+}
+
+.textfelder{
+width: 100%; 
+padding: 12px 20px; 
+margin: 8px 0;
+display: inline-block; 
+border: 1px solid #ccc; 
+box-sizing: border-box;
+}
+
+.bild{
+    width: 32%;
 }

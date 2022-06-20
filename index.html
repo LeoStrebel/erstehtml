@@ -2,29 +2,61 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Web Portfolio von Pferd</title>
+    <title>Web Portfolio von Leo</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Web Portfolio von Starscream</h1>
 
-    <h2>Willkommen!</h2>
+    <div id="top">
+            <div id="navigation">
+                <a href="#about-us">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            
+        </div>
 
-    <p>Schön, dass Sie auf meiner Seite vorbeischauen.</p>
+  <div class="forms">
 
-    <p>Sie können sich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben können Sie auch meine Webprojekte anschauen. Viel Spass.</p>
+      <h1>Web Portfolio von Leo</h1>
 
-    <img src="img/index.jpg" alt="Foto von mir">
-    <br>
-    <br>
-    <a href="index2.html">Wer hat schon wieder versagt?</a>
+      <h2>Willkommen!</h2>
 
-    <a href="cool.html">cool</a>
-    <br>
-    <a href="https://transformers.fandom.com/de/wiki/Starscream_(Movie)">Wer ist Starsream?</a>
-    <br>
-    <a href="blog/index.html">Aufgabe kw 22</a>
+      <p>Schön, dass Sie auf meiner Seite vorbeischauen.</p>
 
-    <p>Starscream :-)</p>
+      <p>Sie können sich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben können Sie auch meine Webprojekte anschauen. Viel Spass.</p>
+
+      <img src="img/index.jpg" alt="Foto von mir">
+      <br>
+      <br>
+      <!-- <a href="index2.html">Wer hat schon wieder versagt?</a>
+
+      <a href="cool.html">cool</a>
+      <br>
+      <a href="https://transformers.fandom.com/de/wiki/Starscream_(Movie)">Wer ist Starsream?</a>
+      <br> -->
+      <a href="blog/index.html">Aufgabe kw 22</a>
+
+      <p>Leo :-)</p>
+
+      <div id="container">
+        <video autoplay="true" id="videoElement">
+        </video>
+      </div>
+
+  </div>
+<script>
+    var video = document.querySelector("#videoElement");
+
+    if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+        video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+        console.log("Something went wrong!");
+        });
+    }
+</script>
   </body>
 </html>
