@@ -98,10 +98,11 @@ box-sizing: border-box;
 }
 
 footer{
-    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
     text-align: center;
-    padding: 1%;
-    width: 100%;
+    background-color: #ccc;
 }
 
 #mag{
